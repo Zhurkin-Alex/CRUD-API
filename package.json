@@ -1,0 +1,51 @@
+{
+  "name": "crud-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "nodemon --exec ts-node-dev src/server.ts",
+    "start:prod": "npm run build && node dist/server.js",
+    "build": "webpack",
+    "start:multi": "npm run build && node dist/server.js",
+    "lint": "eslint . --ext .ts",
+    "prettier": "prettier --write \"**/*.{js,ts,json,html}\"",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zhurkin-Alex/CRUD-API.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zhurkin-Alex/CRUD-API/issues"
+  },
+  "homepage": "https://github.com/Zhurkin-Alex/CRUD-API#readme",
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.3.1",
+    "eslint": "^8.44.0",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22",
+    "prettier": "^2.8.8",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.1.6",
+    "uuid": "^9.0.0",
+    "webpack": "^5.88.1",
+    "webpack-cli": "^5.1.4"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.22.5",
+    "@babel/preset-typescript": "^7.22.5",
+    "@types/express": "^4.17.17",
+    "@types/jest": "^29.5.2",
+    "@types/supertest": "^2.0.12",
+    "@types/uuid": "^9.0.2",
+    "supertest": "^6.3.3",
+    "ts-jest": "^29.1.1",
+    "ts-loader": "^9.4.4"
+  }
+}
