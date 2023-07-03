@@ -56,3 +56,6 @@ curl -X PUT \
 5) DELETE /api/users/{userId}
 Deletes a user by their ID.
 curl -X DELETE http://localhost:4000/api/users/user_id
+
+test
+npm run test
